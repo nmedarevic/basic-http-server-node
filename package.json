@@ -16,6 +16,8 @@
     "typescript": "^5.5.3"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "@apollo/server": "^4.10.4",
+    "express": "^4.19.2",
+    "graphql": "^16.9.0"
   }
 }
