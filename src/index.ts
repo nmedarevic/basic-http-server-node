@@ -5,6 +5,10 @@ async function main() {
   const app = express();
   const port = process.env.PORT;
 
+  if (typeof port === "undefined") {
+    throw new Error("Server port is not defined!");
+  }
+ 
   app.get('/', (_: Request, res: Response) => {
     res.send('Hello World!'); 
   });
