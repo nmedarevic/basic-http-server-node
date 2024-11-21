@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npx tsc --watch",
-    "dev": "npx ts-node ./src/index.ts --env-file=./env"
+    "dev": "npx ts-node ./src/index.ts --env-file=./env",
+    "prettier": "prettier . --write",
+    "test": "mocha --import=tsx src/**/*.test.ts"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +16,9 @@
     "@types/express": "^4.17.21",
     "@types/mocha": "^10.0.10",
     "@types/node": "^22.9.1",
+    "@typescript-eslint/parser": "^8.15.0",
     "eslint": "^9.15.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "ts-mocha": "^10.0.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.15.0"
